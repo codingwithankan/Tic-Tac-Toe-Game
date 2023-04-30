@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Varela+Round&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(171, 107, 231);
+    color: rgb(253, 253, 253);
+    height: 49px;
+    font-size: 20px;
+    /* center me lane ke liye 14 15 line */
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+nav ul {
+    /* //navbar emi bindu hatane ke liye */
+    list-style-type: none;
+}
+
+.gamecontainer {
+    background-color: rgb(93, 240, 250);
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+.container {
+    display: grid;
+    /* line 35 and 36 used for making matrix like structure or table */
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    /* vw is used for responsiveness of the website chota bad krne se se content bhar nhi jayega */
+
+
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(213, 248, 158);
+    cursor: pointer;
+}
+
+.info{
+    font-size: 24px;
+}
+
+.gameinfo {
+    /* padding ander se and margin bahar se */
+    padding: 0 44px;
+    font-style: oblique;
+}
+.imgbox img{
+    /* display: none; */
+    width : 0;
+    transition: width 1s ease-in-out;
+
+}
+
+/* writing utility classes to remove outer border */
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+   
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 13px 23px;
+    padding: 1px 21px;
+   
+    background: rgb(254, 25, 193);
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+
